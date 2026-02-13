@@ -13,7 +13,7 @@ const App = () => {
 
     if (!user) {
         console.log('Error: User not found');
-        setError({ email: ' User not found', password: '' });
+        setError({ email: 'User not found', password: '' });
       } 
       else if (user.password !== password) {
         console.log('Error: Incorrect password');
