@@ -12,8 +12,8 @@ const App = () => {
     );
 
     if (!user) {
-        console.log('Error: Email not found');
-        setError({ email: 'Email not found', password: '' });
+        console.log('Error: User not found');
+        setError({ email: ' User not found', password: '' });
       } 
       else if (user.password !== password) {
         console.log('Error: Incorrect password');
@@ -25,7 +25,7 @@ const App = () => {
   }
 
   function handleSubmit(e){
-    e.preventDefault();   // prevent page reload
+    e.preventDefault();   
     
     if (!email || !password) {
       setError( {email: !email ? 'Email is required' : '',
